@@ -9,7 +9,7 @@
       <p class="title">Rock Paper Scissors</p>
     </div>
     <div class="game-div">
-       <p class="js-course score"></p>
+       <div class="score-div"><p class="js-course score"></p></div>
       <button class="move-button" onclick="
       playGame('rock');
     "><img class="move-icon" src="images/rock-emoji.png"></button>
@@ -22,7 +22,7 @@
 
     <p class="js-result result"></p>
     <p class="js-moves"></p>
-    <button class="reset-score-button" onclick="
+    <div class="reset-div">  <button class="reset-score-button" onclick="
       score.wins=0;
       score.losses=0;
       score.ties=0;
@@ -30,7 +30,7 @@
       updateScoreElement();
     ">
       Reset Score
-    </button>
+    </button></div>
     </div>
     <script src="rps.js"></script>
   </body>
